@@ -1,33 +1,36 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css"
 
-const { content } = Astro.props;
+const { content } = Astro.props
 ---
 
-<html lang={content.lang || 'en'}>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{content.title}</title>
-		<style>
-			body {
-			  background: black;
-			  color: white;
-			}
-			#starfield {
-			  position: absolute;
-			  top: 0;
-			  left: 0;
-			  width: 100%;
-			  height: 100%;
-			}
-			</style>
-	</head>
-	<body>
-		<div id="starfield">
-			<slot />
-
-		</div>
-	</body>
+<html lang={content.lang || "en"}>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <title>{content.title}</title>
+        <style>
+            body {
+                background: black;
+                color: white;
+            }
+            #starfield {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="starfield">
+            <slot />
+        </div>
+        <article class="prose lg:prose-xl">
+            <h1>{content.title}</h1>
+            {content.body}
+        </article>
+    </body>
 </html>
