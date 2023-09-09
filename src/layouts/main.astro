@@ -12,24 +12,22 @@ const { content } = Astro.props
         <title>{content.title}</title>
         <style>
             body {
-                background: black;
                 color: white;
             }
             #starfield {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
+         
+                margin:0;
+                padding:0;
+                z-index: -1;
             }
         </style>
     </head>
-    <body>
-        <div id="starfield">
+    <body class="bg-slate-950 text-transparent "	>
+        <h1 class="text-3xl text-sky-600/50 font-light tracking-widest">{content.title}</h1>
+        <div class="absolute top-0 left-0 w-screen h-screen -z-10 " id="starfield">
             <slot />
         </div>
-        <article class="prose lg:prose-xl">
-            <h1>{content.title}</h1>
+        <article class="prose lg:prose-xl z-10 static top-0 left-0 w-screen">
             {content.body}
         </article>
     </body>

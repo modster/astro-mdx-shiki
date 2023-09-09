@@ -12,4 +12,7 @@
     },
     "workbench.editor.centeredLayoutFixedWidth": true,
     "workbench.colorTheme": "Community Material Theme Darker High Contrast",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
 }

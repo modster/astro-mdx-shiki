@@ -1,9 +1,9 @@
-import { defineConfig } from "astro/config"
-import mdx from "@astrojs/mdx"
-import svelte from "@astrojs/svelte"
-import react from "@astrojs/react"
+import { defineConfig } from "astro/config";
+import mdx from "@astrojs/mdx";
+import svelte from "@astrojs/svelte";
+import react from "@astrojs/react";
 
-import tailwind from "@astrojs/tailwind"
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,11 +11,11 @@ export default defineConfig({
   markdown: {
     syntaxHighlight: "shiki",
     shikiConfig: {
-      theme: "dracula",
+      theme: "nord",
       // Learn more about this configuration here:
       // https://docs.astro.build/en/guides/markdown-content/#syntax-highlighting
     },
   },
 
   integrations: [mdx(), svelte(), react(), tailwind()],
-})
+});
