@@ -1,18 +1,23 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Canvas, PerspectiveCamera } from '@react-three/fiber'
-import { Stars } from "@react-three/drei"
+import { Canvas } from "@react-three/fiber";
+import { Stars, PerspectiveCamera} from "@react-three/drei";
 
-
-
-export default function StarField() {
+function StarField() {
     return (
         <>
             <Canvas>
-                <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
+                <PerspectiveCamera makeDefault position={[0, 0, 100]} />
+                <Stars
+                    radius={100}
+                    depth={50}
+                    count={5000}
+                    factor={7}
+                    saturation={3}
+                    fade    
+                    speed={0.1}
+                />
             </Canvas>
-            </>
-    )
+        </>
+    );
 }
 
-
+export default StarField;

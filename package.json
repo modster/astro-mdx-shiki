@@ -28,7 +28,6 @@
     "three": "^0.156.1"
   },
   "devDependencies": {
-    "@skeletonlabs/skeleton": "^2.0.0",
-    "@skeletonlabs/tw-plugin": "^0.1.0"
+ 
   }
 }
