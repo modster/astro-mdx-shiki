@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "watch:tailwind": "npx tailwindcss -i ./src/input.css -o ./src/styles/global.css --watch",
-    "start": "astro dev --host ",
+    "start": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

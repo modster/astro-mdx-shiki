@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../.cloudflared"
+		}
+	],
+	"settings": {
+		"workbench.editor.centeredLayoutFixedWidth": true,
+		"workbench.colorTheme": "Monokai"
+	}
+}
