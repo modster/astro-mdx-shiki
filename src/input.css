@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+canvas {
+    @apply bg-gradient-to-r from-slate-950 block m-0 p-0 w-screen h-screen max-w-full;
+}
+
+pre {
+    @apply rounded-lg p-10 m-10 ;
+}
+
+code {
+    @apply bg-gradient-to-r from-indigo-950 from-10% via-slate-950 via-50% to-zinc-900 to-90%
+}
