@@ -5,12 +5,11 @@
         "source.organizeImports.biome": true
     },
     "[javascript]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+        "editor.defaultFormatter": "biomejs.biome"
     },
     "[javascriptreact]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "workbench.editor.centeredLayoutFixedWidth": true,
     "workbench.colorTheme": "Monokai",
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
