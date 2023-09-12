@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 canvas {
-    @apply bg-gradient-to-r from-slate-950 block m-0 p-0 w-screen h-screen max-w-full;
+    @apply bg-gradient-to-t from-indigo-950 from-5% via-slate-950 via-30% to-black to-100%;
 }
 
 pre {

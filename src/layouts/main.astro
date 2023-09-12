@@ -1,7 +1,12 @@
 ---
 import "../styles/global.css"
-
 const { content } = Astro.props
+
+title: "Hello, world." 
+slug: 
+baseUrl: // greeffer.com/ or datadash.cloud.com/
+layout: // ../layouts/main.astro
+
 ---
 
 <html lang={content.lang || "en"}>
@@ -10,20 +15,28 @@ const { content } = Astro.props
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <title>{content.title}</title>
-        <style>
-            body {
-                color: white;
-            }
-            #starfield {
-         
-                margin:0;
-                padding:0;
-                z-index: -1;
-            }
-        </style>
+        <meta name="description" content={content.description} />
+        <meta name="author" content={content.author} />
+        <meta name="keywords" content={content.keywords} />
+        <meta name="robots" content={content.robots} />
+        <meta name="theme-color" content="#000000" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content={content.twitter} />
+        <meta name="twitter:creator" content={content.twitter} />
+        <meta property="og:title" content={content.title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={content.url} />
+        <meta property="og:description" content={content.description} />
+        <meta property="og:image" content={content.image} />
+        <meta property="og:image:alt" content={content.title} />
+        <meta property="og:site_name" content={content.title} />
+        <meta property="og:locale" content={content.locale} />
+        <meta property="og:locale:alternate" content={content.locale} />
     </head>
-    <body class="bg-slate-950 text-transparent "	>
-        <h1 class="text-3xl text-sky-600/50 font-light tracking-widest">{content.title}</h1>
+    <body class="bg-slate-950">
+        <h1 class="text-3xl text-orange-400 font-bold text-center tracking-widest mix-blend-difference">
+            {content.title}
+        </h1>
         <div class="absolute top-0 left-0 w-screen h-screen -z-10 " id="starfield">
             <slot />
         </div>

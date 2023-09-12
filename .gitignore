@@ -19,6 +19,5 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
-0xe0e0e/
-.0xe0e0e0xe0e0e
-.0xe0e0e0xe0e0e0xe0e0e
+
+.notes/*
